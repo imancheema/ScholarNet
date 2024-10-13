@@ -1,0 +1,5 @@
+Persistence/Register_CRUD.class
+Endpoint/RegisterResource.class
+Endpoint/ApplicationConfig.class
+Helper/UserRegistration.class
+Business/RegisterBusiness.class

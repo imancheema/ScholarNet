@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Scholarships</title>
+    </head>
+<style>
+body{
+    max-width: 500px;
+    background-color: #9bcdfe;
+    background-image: linear-gradient(90deg, #97c7f8 0%, #e6cbff 100%);
+    margin: auto;
+    font-weight: bold;
+    height: 100vh;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    width: 100%;
+    padding-left: 100px;
+    justify-content: center;
+    background-color: #36323a;
+    color: white;
+    box-shadow: #1a171e;
+    padding: 14px;
+    margin: 8px 0;
+    border-color: #36323a00; 
+    border-radius: 20px;
+}
+
+input[type=text], select {
+    width: 450px;
+    padding: 12px;
+    padding-left: 20px;
+    justify-content: center;
+    
+    box-shadow: #1a171e;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 248, 248);
+    border-radius: 35px;
+}
+
+input[type=password], select {
+    width: 450px;
+    padding: 12px;
+    padding-left: 20px;
+    justify-content: center;
+    box-shadow: #1a171e;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 248, 248);
+    border-radius: 35px;
+}
+
+
+div {
+    border-radius: 35px;
+    background-color: #e5e4e4;
+    padding: 20px;
+}
+
+div.content {
+  border-radius: 35px;
+  background-color: #e5e4e4;
+  padding: 20px;
+  margin-bottom: 30px; /* add margin to the bottom of the div */
+}
+
+
+* {box-sizing: border-box;}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+table td {
+  font-weight: normal;
+}
+
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 15px;
+}
+
+</style>
+    <body>
+<!--    <h1>Login</h1>-->
+    <h1>Enter your information below:</h1>
+<div class="content">
+  <form action="FrontEnd" method="post">
+    <input type="hidden" name="pageName" value="login">
+    
+    <label for="firstName">Username</label>
+    <input type="text" id="username" placeholder="Username" name="username" >
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Password" name="password" >
+    
+    <form>
+        <input type="submit" value="Enter Scholarship Portal">       
+    </form>  
+    <!--<button type="submit">Enter Scholarship Portal</button>-->  
+    <p>Don't have an account? Register below!</p>
+    
+  </form>
+    <form action="register.html">
+        <input type="submit" value="Register">       
+    </form>  
+</div>
+     </body>
+</html>

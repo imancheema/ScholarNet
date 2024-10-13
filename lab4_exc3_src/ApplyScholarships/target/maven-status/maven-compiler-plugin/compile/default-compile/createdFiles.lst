@@ -1,0 +1,5 @@
+Endpoint/ApplyResource.class
+Persistence/Apply_CRUD.class
+Business/ApplyBusiness.class
+Endpoint/ApplicationConfig.class
+Helper/ScholarshipApply.class

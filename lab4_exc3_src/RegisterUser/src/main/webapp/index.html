@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--Ugly interface. It is just for test, whether services work or not!-->
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style>
+body{
+    max-width: 500px;
+    background-color: #9bcdfe;
+    background-image: linear-gradient(90deg, #97c7f8 0%, #e6cbff 100%);
+    margin: auto;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    width: 100%;
+    padding-left: 100px;
+    justify-content: center;
+    background-color: #36323a;
+    color: white;
+    box-shadow: #1a171e;
+    padding: 14px;
+    margin: 8px 0;
+    border-color: #36323a00; 
+    border-radius: 20px;
+}
+
+input[type=text], select {
+    width: 450px;
+    padding: 12px;
+    padding-left: 20px;
+    justify-content: center;
+    box-shadow: #1a171e;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 248, 248);
+    border-radius: 35px;
+}
+
+div {
+    border-radius: 35px;
+    background-color: #e5e4e4;
+    padding: 20px;
+}
+
+.uploadButton {
+  background-color: white;
+  color: black;
+  padding: 0.8rem;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+</style>
+    <body>
+        <h1>Welcome to the Registration Portal!</h1>
+        <h2>Complete the form below:</h2>
+        <div>
+            <form action="webresources/register/update" method="post"> 
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Name" name="firstName" >
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Name" name="lastName" >
+
+                <label for="userName">Username</label>
+                <input type="text" id="username" placeholder="Username" name="username" >
+
+                <label for="email">Email</label>
+                <input type="text" id="emailAddress" placeholder="Email" name="emailAddress" >
+
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Password" name="password" >
+
+                <label for="number">Phone Number</label>
+                <input type="text" id="phoneNumber" placeholder="Number" name="phoneNumber" >
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
+

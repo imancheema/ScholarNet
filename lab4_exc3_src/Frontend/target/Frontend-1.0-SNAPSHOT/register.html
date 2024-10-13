@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Scholarships</title>
+    </head>
+    <style>
+body{
+    max-width: 500px;
+    background-color: #9bcdfe;
+    background-image: linear-gradient(90deg, #97c7f8 0%, #e6cbff 100%);
+    margin: auto;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    width: 100%;
+    padding-left: 100px;
+    justify-content: center;
+    background-color: #36323a;
+    color: white;
+    box-shadow: #1a171e;
+    padding: 14px;
+    margin: 8px 0;
+    border-color: #36323a00; 
+    border-radius: 20px;
+}
+
+input[type=text], select {
+    width: 450px;
+    padding: 12px;
+    padding-left: 20px;
+    justify-content: center;
+    box-shadow: #1a171e;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 248, 248);
+    border-radius: 35px;
+}
+
+div {
+    border-radius: 35px;
+    background-color: #e5e4e4;
+    padding: 20px;
+}
+
+</style>
+    <body>
+    <h1>Register as a Student :</h1>
+    <h2>Enter your information below:</h2>
+<div>
+  <form action="http://localhost:8080/RegisterUser/webresources/register/update" method="post">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstname" placeholder="Name" name="firstName" >
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastname" placeholder="Name" name="lastName" >
+    
+    <label for="userName">Username</label>
+    <input type="text" id="username" placeholder="Username" name="username" >
+
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="Email" name="emailAddress" >
+
+    <label for="password">Password</label>
+    <input type="text" id="password" placeholder="Password" name="password" >
+
+    <label for="number">Phone Number</label>
+    <input type="text" id="number" placeholder="Number" name="phoneNumber" >
+
+    <label for="school">School</label>
+    <input type="text" id="school" placeholder="School" name="school" >
+
+    <label for="year">Year of Study</label>
+    <select id="year" name="schoolYear">
+      <option value="yearOne">1st Year</option>
+      <option value="yearTwo">2nd Year</option>
+      <option value="yearThree">3rd Year</option>
+      <option value="yearFour">4th Year</option>
+      <option value="yearFive">5th+ Year</option>
+      <option value="yearSix">Post Graduate</option>
+    </select>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="man">Man</option>
+      <option value="woman">Woman</option>
+      <option value="non-binary">Non-Binary</option>
+    </select>
+    <input type="submit" action="http://localhost:8080/RegisterUser/webresources/register/update" value="Submit">
+  </form>
+</div>
+     </body>
+</html>
