@@ -18,17 +18,12 @@ Based off this diagram, SQL tables were created.
   - Business Layer: Contains the ‘ApplyBusiness’ class, which implements the application process logic.
   - Endpoint Layer: Includes ApplicationConfig and ApplyResource classes to manage the REST API.
   - Helper Layer: Contains the ScholarshipApply class for reusable functions.
-  - Persistence Layer: Has the “Apply_CRUD” class to connect to the database and handle application storage.
-- **Register Microservice**: Handles user registration for website access by validating user information and creating a new account in the database. It has a REGISTER_SMS database with a
-REGISTER_USER table.
-   - The Business layer contains the “RegisterBusiness” class and is responsible for the business
-logic of the registration functionalities, like receiving and adding users to the system. The
-endpoint layer includes the “ApplicationConfig” and “RegisterResource” classes and manages
-the REST API. The Helper layer consists of a “UserRegistration” class which defines a
-constructor (with parameters like email, username, first name) and getter methods to retrieve
-values, which other layers can then use. The persistence layer has the “Register_CRUD”
-establishes a connection to the database (REGISTER_SMS), receives information from the user,
-and inserts a new row into the database.
+  - Persistence Layer: Has the 'Apply_CRUD' class to connect to the database and handle application storage.
+- **Register Microservice**: Handles user registration for website access by validating information and creating new accounts in the REGISTER_SMS database's REGISTER_USER table. It includes:
+   - Business Layer: Contains the 'RegisterBusiness' class for registration logic.
+   - Endpoint Layer: Features ApplicationConfig and RegisterResource classes for the REST API.
+   - Helper Layer: Contains the UserRegistration class for user data management, defining a constructor with parameters like email, username, and first name, along with getter methods for value retrieval by other layers.
+   - Persistence Layer: Features the Register_CRUD class to connect to the database and insert user data.
 
 
 
