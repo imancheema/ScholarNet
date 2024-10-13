@@ -3,7 +3,9 @@
 The scholarship search process can be a challenging and time consuming experience for many students, especially when they have to navigate multiple websites 
 to find the scholarships that fit their needs and eligibility requirements.
 
-ScholarNet is a **microservice-based** web application that offers a centralized platform for students to find and apply to scholarships posted by numerous organizations.
+ScholarNet is a **microservice-based** web application that uses N-layered architecture, offering a centralized platform for students to find and apply to scholarships posted by numerous organizations.
+
+Technologies: Java, HTML/CSS, MySQL, Apache Tomcat, JSP/Servlets, JAXB/XML, Docker, Kubernetes, Google Cloud.
 
 ## ER Diagram
 The ER diagram consists of entities including Account, Scholarship, Application, and User. Among these, the User entity is a superclass that is further divided into two subclasses,
@@ -24,8 +26,3 @@ Based off this diagram, SQL tables were created.
    - Endpoint Layer: Features ApplicationConfig and RegisterResource classes for the REST API.
    - Helper Layer: Contains the UserRegistration class for user data management, defining a constructor with parameters like email, username, and first name, along with getter methods for value retrieval by other layers.
    - Persistence Layer: Features the Register_CRUD class to connect to the database and insert user data.
-
-
-
-
-
